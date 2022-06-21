@@ -1,0 +1,110 @@
+body {
+  background: #f0f0f0;
+}
+
+#container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  touch-action: pinch-zoom;
+  cursor: none;
+  outline: 10000px solid #c0c0c0;
+}
+
+#preview {
+  --size: 10px;
+  --color: #353742;
+  background: var(--color);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--size);
+  height: var(--size);
+  transform: translate(calc(0px - var(--size) / 2), calc(0px - var(--size) / 2));
+  pointer-events: none;
+}
+
+.cursor {
+  background-image: url('cursor.png');
+  background-size: 15px 22px;
+  position: fixed;
+  width: 15px;
+  height: 22px;
+  filter: drop-shadow(4px 2px 2px #0004);
+  pointer-events: none;
+  z-index: 50;
+}
+
+#footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 12px;
+  padding-top: 0;
+}
+
+#footer > .button {
+  margin: 0;
+  margin-right: 0.1in;
+}
+
+#footer > .button.color-left {
+  width: 40px;
+  min-width: 40px;
+  border-right: none;
+}
+
+#footer > .button.color {
+  width: 38px;
+  min-width: 38px;
+  border-left: none;
+  border-right: none;
+}
+
+#footer > .button.color-right {
+  width: 40px;
+  min-width: 40px;
+  border-left: none;
+}
+
+.checkmark {
+  color: white;
+}
+
+#connecting {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  line-height: 100vh;
+  z-index: 1000;
+  text-align: center;
+  background: var(--background);
+  animation: fadeIn 0.5s linear;
+}
+
+#connecting.nofade {
+  animation: none;
+}
+
+#connecting.fadeout {
+  animation: fadeOut 0.5s linear;
+}
+
+.copyright {
+  pointer-events: none;
+}

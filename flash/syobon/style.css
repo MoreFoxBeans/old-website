@@ -1,0 +1,39 @@
+.emscripten {
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+div.emscripten {
+  text-align: center;
+  font-size: 18px;
+}
+
+div.emscripten_border {
+  height: 100vh;
+}
+
+/* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+canvas.emscripten {
+  border: 0px none;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+body {
+  background: #000;
+  font-family: helvetica, arial, sans-serif;
+  color: #ccc;
+  margin: 0;
+}
+
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

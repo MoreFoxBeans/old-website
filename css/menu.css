@@ -1,0 +1,101 @@
+@keyframes menuFadeIn {
+  from { background: #0000; }
+  to { background: #0003; }
+}
+
+@keyframes menuFadeOut {
+  from { background: #0003; }
+  to { background: #0000; }
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-4in); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(-4in); }
+}
+
+#background {
+  background: #0003;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  animation: menuFadeIn 0.5s;
+}
+
+.fade-out {
+  animation: menuFadeOut 0.5s !important;
+}
+
+#menu {
+  background: var(--background);
+  background-image: none;
+  border-right: var(--border-size) solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+  
+  width: 4in;
+  height: 100vh;
+  padding: 12px;
+
+  animation: slideIn 0.5s cubic-bezier(.39, .58, .57, 1);
+}
+
+.slide-out {
+  animation: slideOut 0.5s cubic-bezier(.47, 0, .74, .71) !important;
+}
+
+#menu > .button {
+  width: calc(4in - 26px);
+}
+
+#menuButton, #closeButton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+}
+
+#menuButton:hover, #closeButton:hover {
+  cursor: pointer;
+}
+
+#menuIcon, #closeIcon {
+  margin: auto;
+  user-select: none;
+}
+
+#closeButton {
+  left: calc(4in - 50px);
+}
+
+#menu > span:not(:last-child) {
+  margin-bottom: 0.2in;
+}
+
+.menutext {
+  position: fixed;
+  top: 0;
+  left: 48px;
+  line-height: 48px;
+}

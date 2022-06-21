@@ -1,0 +1,162 @@
+html.light, div.button.light {
+  --background: #f0f0f0;
+  --button: #e8e8e8;
+  --border: #d0d0d0;
+  --text: #606060;
+  --link: #7b9fc6;
+}
+
+html.dark, div.button.dark {
+  --background: #404040;
+  --button: #383838;
+  --border: #303030;
+  --text: #c0c0c0;
+  --link: #6d8eb0;
+}
+
+html.tea, div.button.tea {
+  --background: #a9d784;
+  --button: #9fd076;
+  --border: #8ec164;
+  --text: #56713f;
+  --link: #5da126;
+}
+
+html.taro, div.button.taro {
+  --background: #b898ce;
+  --button: #ac83ca;
+  --border: #a075bd;
+  --text: #654d77;
+  --link: #702f9d;
+}
+
+html.redbean, div.button.redbean {
+  --background: #4d272e;
+  --button: #442128;
+  --border: #3c1d23;
+  --text: #9b787f;
+  --link: #cc3554;
+}
+
+html.blood, div.button.blood {
+  --background: #993131;
+  --button: #8e2929;
+  --border: #862424;
+  --text: #492121;
+  --link: #930000;
+}
+
+html.stars, div.button.stars {
+  --background: #092f40 url('/images/bgs/stars-blue.jpg');
+  --button: #0c374a;
+  --border: #072a39;
+  --text: #718893;
+  --link: #2b7191;
+}
+
+html.starspurple, div.button.starspurple {
+  --background: #3e093e url('/images/bgs/stars-purple.jpg');
+  --button: #480c4b;
+  --border: #39073b;
+  --text: #937194;
+  --link: #902b91;
+}
+
+html.neon, div.button.neon {
+  --background: #110;
+  --button: #110;
+  --border: #ee4;
+  --text: #ee4;
+  --link: #fa4;
+  --shadow: 0;
+  text-shadow: 0 0 5px #ff08;
+}
+
+html.neon div.button:not(.theme:not(.neon)), html.neon .textarea, html.neon .seperator {
+  box-shadow: 0 0 5px #ff08, 0 0 5px #ff08 inset;
+}
+
+div.button.theme:not(.neon) {
+  text-shadow: none;
+}
+
+html.neon #menu {
+  box-shadow: 0 0 5px #ff08;
+}
+
+html.sus, div.button.sus {
+  --background: #223 url('/images/bgs/drip.jpg');
+  --button: #000 url('/images/bgs/sus.jpg');
+  --border: #000;
+  --text: #fff;
+  --link: #fff;
+}
+
+html.sus body {
+  background-size: 100% 100%;
+}
+
+html.rainbow1, div.button.rainbow1 {
+  --background: #F7A284;
+  --button: #BADF93;
+  --border: #36BFAB;
+  --text: #387E83;
+  --link: #DB1073;
+}
+
+html.rainbow2, div.button.rainbow2 {
+  --background: #BADF93;
+  --button: #F7A284;
+  --border: #DB1073;
+  --text: #387E83;
+  --link: #36BFAB;
+}
+
+html.rainbow3, div.button.rainbow3 {
+  --background: #BADF93;
+  --button: #F7A284;
+  --border: #DB1073;
+  --text: #387E83;
+  --link: #36BFAB;
+}
+
+html.chaos, div.button.chaos {
+  --background: #DB1073;
+  --button: #F7A284;
+  --border: #BADF93;
+  --text: #36BFAB;
+  --link: #387E83;
+}
+
+html.contrast, div.button.contrast {
+  --background: #000;
+  --button: #000;
+  --border: #fff;
+  --text: #fff;
+  --link: #44f;
+  --font-family: 'JetBrains Mono';
+  --font-size: 18pt;
+  --shadow: 0;
+  --radius: 0;
+}
+
+html.ugly, div.button.ugly {
+  --background: #fff;
+  --button: #fff;
+  --border: #000;
+  --text: #000;
+  --link: #00f;
+  --font-family: 'Arial';
+  --font-size: 20pt;
+  --shadow: 0;
+  --radius: 0;
+  --border-size: 1px;
+}
+
+html.lsd, div.button.lsd {
+  --background: #ff00ff url('/images/bgs/seizure1.gif');
+  --button: #ff0000 url('/images/bgs/seizure2.gif');
+  --border: #00ff00;
+  --text: #ffff00;
+  --link: #00ffff;
+}

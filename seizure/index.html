@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seizure generator.</title>
+    <link href="/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="global(); setup();">
+    <div id="pageMain" class="page">
+      <div class="heading">WARNING: PHOTOSENSITIVITY/EPILEPSY SEIZURES
+If you, or anyone in your family has an epileptic condition or has had seizures of any kind, consult your physician before continuing.
+IMMEDIATELY DISCONTINUE use and consult your physician before resuming operation.</div>
+      <div id="next" class="button">Continue</div>
+    </div>
+    <div id="pageSecondary" class="page" style="display: none;">
+      <div class="heading">Here's another warning because of how severe the flashing is:
+WARNING: The following page may potentially trigger seizures for people with photosensitive epilepsy.
+Viewer discretion is actually actually actually actually really actually advised.</div>
+      <div id="continue" class="button">Yes I actually want to die!</div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="/js/global.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

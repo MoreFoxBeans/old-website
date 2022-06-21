@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talking Ben clone.</title>
+    <link href="/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="global(); menu(); setup();">
+    <div class="page" id="pageMain">
+      <div class="heading">Talking Ben Clone</div>
+      <div id="call" class="button"><div class="mdi mdi-phone-forward button-icon"></div>Call Ben</div>
+      <div class="button" onclick="showPage('pageSound');"><div class="mdi mdi-volume-high button-icon"></div>Soundboard</div>
+    </div>
+    <div class="page" id="pageCall" style="display: none;">
+      <div id="prevquestion" class="heading"></div>
+      <div id="answer" class="heading"></div>
+      <textarea id="question" class="textarea" rows="1"></textarea>
+      <div class="row">
+        <div class="button half float-right right" onclick="hangupSound.play(); hidePage('pageCall');"><div class="mdi mdi-phone-hangup"></div></div>
+        <div id="submit" class="button half float-left left"><div class="mdi mdi-send"></div></div>
+      </div>
+    </div>
+    <div class="page" id="pageSound" style="display: none;">
+      <div class="heading">Soundboard</div>
+      <div class="row">
+        <div class="button half" onclick="sounds[0].play();">Yes.</div>
+        <div class="button half" onclick="sounds[1].play();">No.</div>
+      </div>
+      <div class="row">
+        <div class="button half" onclick="sounds[2].play();">Hohoho!</div>
+        <div class="button half" onclick="sounds[3].play();">bleugh...</div>
+      </div>
+      <div class="row">
+        <div class="button half" onclick="answerSound.play();">Answer</div>
+        <div class="button half" onclick="hangupSound.play();">Hang Up</div>
+      </div>
+      <div class="button" onclick="hidePage('pageSound');"><div class="mdi mdi-arrow-left button-icon"></div>Back</div>
+    </div>
+    <div id="menuButton">
+      <span id="menuIcon" class="mdi mdi-menu"></span>
+    </div>
+    <div id="overlay" style="display: none;">
+      <div id="background"></div>
+      <div id="menu">
+        <div id="closeButton">
+          <span id="closeIcon" class="mdi mdi-close"></span>
+        </div>
+        <div class="heading">Talking Ben</div>
+        <a class="button float-bottom bottom" href="/"><div class="mdi mdi-home button-icon"></div>Home</a>
+      </div>
+    </div>
+    <div class="copyright"><a href="https://github.com/morefoxbeans">©MoreFoxBeans 2022</a></div>
+    <script src="/js/global.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

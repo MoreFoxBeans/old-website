@@ -1,0 +1,30 @@
+body {
+  all: revert;
+  margin: 0;
+  
+  transition: background 0.5s;
+}
+
+#footer {
+  background: var(--background);
+  background-image: none;
+
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px;
+
+  border-top: var(--border-size) solid var(--border);
+}
+
+#color {
+  margin-right: 0.1in;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+#update {
+  margin-bottom: 0;
+}

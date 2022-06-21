@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warrior Cats names.</title>
+    <link href="/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="global(); menu(); setup();">
+    <div id="pageMain" class="page">
+      <div class="heading category">Clan: <p id="Clan" class="name"></p></div>
+      <div class="heading category">Ancient: <p id="Ancient" class="name"></p></div>
+      <div class="heading category">Tribe: <p id="Tribe" class="name"></p></div>
+      <div id="generate" class="button">Generate</div>
+    </div>
+    <div id="menuButton">
+      <span id="menuIcon" class="mdi mdi-menu"></span>
+    </div>
+    <div id="overlay" style="display: none;">
+      <div id="background"></div>
+      <div id="menu">
+        <div id="closeButton">
+          <span id="closeIcon" class="mdi mdi-close"></span>
+        </div>
+        <div class="heading">Warrior Cats Names</div>
+        <div class="seperator"></div>
+        <div class="heading">Sourced from:</div>
+        <div class="heading"><a href="https://warriors.fandom.com/wiki/">Warriors Wiki</a></div>
+        <a class="button float-bottom bottom" href="/"><div class="mdi mdi-home button-icon"></div>Home</a>
+      </div>
+    </div>
+    <div class="copyright"><a href="https://github.com/morefoxbeans">©MoreFoxBeans 2022</a></div>
+    <script src="/js/global.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

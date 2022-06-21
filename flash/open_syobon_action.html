@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/flash/syobon/" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Syobon Action</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="loading">
+      <div class="emscripten" id="status"></div>
+      <div class="emscripten">
+        <progress value="0" max="1" id="progress" hidden=""></progress>  
+      </div>
+    </div>
+    <div class="emscripten_border">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" width="480" height="420"></canvas>
+    </div>
+    <script src="preload.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

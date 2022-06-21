@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random thingies!</title>
+    <link href="/css/global.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="global(); setup();">
+    <div id="pageMain" class="page">
+      <div class="heading">Random thingies</div>
+      <a class="button" href="/clicker/"><div class="mdi mdi-cursor-default button-icon"></div>Boring Clicker</a>
+      <a class="button" href="/draw/"><div class="mdi mdi-brush button-icon"></div>Multiplayer Drawing</a>
+      <a class="button" href="/quiz/"><div class="mdi mdi-cards button-icon"></div>Sussy Quiz</a>
+      <a class="button" href="/ben/"><div class="mdi mdi-phone-classic button-icon"></div>Talking Ben Clone</a>
+      <a class="button" href="/boxes/"><div class="mdi mdi-checkbox-multiple-blank button-icon"></div>Infinite Boxes</a>
+      <a class="button" href="/flash/"><div class="mdi mdi-puzzle button-icon"></div>Unblocked Games</a>
+      <a class="button" href="/seizure/"><div class="mdi mdi-radioactive button-icon"></div>Seizure Generator</a>
+      <a class="button" href="/math/"><div class="mdi mdi-sigma button-icon"></div>Math Game</a>
+      <a class="button" href="/c/?lime"><div class="mdi mdi-palette button-icon"></div>Color Screen</a>
+      <a class="button" href="/dream/"><div class="mdi mdi-help-circle-outline button-icon"></div>???</a>
+      <div class="seperator"></div>
+      <div class="button" onclick="showPage('pageThemes');"><div class="mdi mdi-theme-light-dark button-icon"></div>Page Theme</div>
+    </div>
+    <div id="pageThemes" class="page" style="display: none;">
+      <div class="heading">Page Theme</div>
+      <div id="themes"></div>
+      <div class="seperator"></div>
+      <div class="button" onclick="hidePage('pageThemes');"><div class="mdi mdi-arrow-left button-icon"></div>Back</div>
+    </div>
+    <div class="copyright"><a href="https://github.com/morefoxbeans">©MoreFoxBeans 2022</a></div>
+    <script src="/js/global.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

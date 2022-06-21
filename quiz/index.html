@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The sussy quiz.</title>
+    <link href="/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="global(); menu(); setup();">
+    <div id="pageMain" class="page" style="display: none;">
+      <div id="count" class="menutext"></div>
+      <div id="question" class="heading">Question</div>
+      <div id="answers"></div>
+      <div id="lives" class="heading"></div>
+    </div>
+    <div id="pageFail" class="page" style="display: none;">
+      <div class="heading title">You failed!</div>
+      <div id="failnum" class="heading subtitle"></div>
+      <div id="retry" class="button"><div class="mdi mdi-replay button-icon"></div><span id="retryText">Retry (-10 questions)</span></div>
+    </div>
+    <div id="pageWin" class="page" style="display: none;">
+      <div class="heading title">You win!</div>
+      <div class="heading subtitle">Good job</div>
+      <div id="restart" class="button">Restart<div class="mdi mdi-replay button-icon"></div></div>
+    </div>
+    <div id="pageStart" class="page">
+      <div class="heading title">The Sussy Quiz</div>
+      <div id="qnum" class="heading subtitle"></div>
+      <div id="begin_easy" class="button">Easy<div class="mdi mdi-numeric-1-box button-icon"></div></div>
+      <div id="begin_medium" class="button">Medium<div class="mdi mdi-numeric-2-box button-icon"></div></div>
+      <div id="begin_impossible" class="button">Impossible<div class="mdi mdi-numeric-3-box button-icon"></div></div>
+    </div>
+    <div id="menuButton">
+      <span id="menuIcon" class="mdi mdi-menu"></span>
+    </div>
+    <div id="overlay" style="display: none;">
+      <div id="background"></div>
+      <div id="menu">
+        <div id="closeButton">
+          <span id="closeIcon" class="mdi mdi-close"></span>
+        </div>
+        <div class="heading">The Sussy Quiz</div>
+        <div id="menuRestart" class="button float-bottom" href="/"><div class="mdi mdi-replay button-icon"></div>Restart</div>
+        <a class="button bottom" href="/"><div class="mdi mdi-home button-icon"></div>Home</a>
+      </div>
+    </div>
+    <div class="copyright"><a href="https://github.com/morefoxbeans">©MoreFoxBeans 2022</a></div>
+    <script src="/js/global.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
